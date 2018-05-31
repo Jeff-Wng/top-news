@@ -1,0 +1,44 @@
+.NavItems {
+    list-style: none;
+    padding: 0;
+}
+
+.NavItems li {
+    margin-bottom: 20px;
+}
+
+.NavItems li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+    .NavItems {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .NavItems li::after {
+        content: ' ';
+        width: 0%;
+        height: 3px;
+        border-radius: 5px;
+        display: block;
+        background-color: black;
+        transition: width 0.2s linear;
+    }
+
+    .NavItems li:hover {
+        text-decoration: none;
+    }
+
+    .NavItems li:hover::after {
+        width: 100%;
+    }
+    
+
+    .NavItems hr {
+        display: none;
+    }
+}

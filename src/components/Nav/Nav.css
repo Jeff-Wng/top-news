@@ -1,0 +1,40 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+    width: 100%;
+    box-shadow: 0 2px 2px #777;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Nav h1 {
+    margin: 0 10px 0 0;
+}
+
+.SideNavToggle {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.SideNavToggle div {
+    height: 4px;
+    width: 90%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (min-width: 1000px) {
+    .Nav {
+        justify-content: center;
+    }
+    
+    .SideNavToggle {
+        display: none;
+    }
+}

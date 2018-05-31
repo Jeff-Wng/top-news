@@ -1,0 +1,21 @@
+.Content h1 {
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 650px) {
+    .Content {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .Content div {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Content div {
+        flex-basis: 33.33%;
+    }
+}

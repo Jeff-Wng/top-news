@@ -1,0 +1,74 @@
+.Search {
+    margin-top: 38px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+}
+
+.searchBox input[type='text'] {
+    height: 50px;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.searchBox button {
+    background-color: white;
+    border: 1px solid black;
+    width: 25%;
+    height: 50px;
+    font-size: 18px;
+    outline: none;
+}
+
+.searchBox button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.searchBox button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1340px) {
+    .searchBox input[type="text"] {
+        width: 60%;
+    }
+    
+    .searchBox button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Search,
+    .Desktop {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .searchBox {
+        width: 25%;
+    }
+}
+
+@media (max-width: 999px) {
+    .Desktop {
+        display: none;
+    }
+
+    .searchBox input[type="text"] {
+        width: 80%;
+    }
+    
+    .searchBox button {
+        width: 20%;
+    }
+}
