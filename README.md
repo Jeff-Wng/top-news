@@ -4,7 +4,7 @@ News app that allows users to choose a top news site and display the top headlin
   This apps displays the top headlines from the most well known news outlets such as BBC, CNN, ESPN, NBC, etc. Users can select individual
 sites to see those headlines alone or search for terms and will display the top headlines from all sites provided by the News API.
 
-The app can be used at https://jwong421.github.io/top-news
+The app can be used at [here](https://jwong421.github.io/top-news)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
